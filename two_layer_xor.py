@@ -38,11 +38,11 @@ for epoch in range(10000):
     # 誤差
     error = y - y_hat
 
-    # 逆伝播
+    # 誤差逆伝播
     d2 = error * sigmoid_deriv(y_hat)
     d1 = np.dot(d2, W2.T) * sigmoid_deriv(h)
 
-    # 更新
+    # 重み更新
     W2 += lr * np.dot(h.T, d2)
     b2 += lr * np.sum(d2, axis=0, keepdims=True)
     W1 += lr * np.dot(X.T, d1)
