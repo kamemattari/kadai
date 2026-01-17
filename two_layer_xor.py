@@ -21,18 +21,19 @@ y = np.array([[0],
 
 # 重みの初期化
 np.random.seed(0)
-W1 = np.random.randn(2, 2)
-b1 = np.zeros((1, 2))
-W2 = np.random.randn(2, 1)
-b2 = np.zeros((1, 1))
+W_hidden = np.random.randn(2, 2)
+b_hidden = np.zeros((1, 2))
+W_output = np.random.randn(2, 1)
+b_output = np.zeros((1, 1))
 
 lr = 0.1
 
 # 学習
 for epoch in range(10000):
     # 順伝播
-    h = sigmoid(np.dot(X, W1) + b1)
-    y_hat = sigmoid(np.dot(h, W2) + b2)
+    hidden_output = sigmoid(np.dot(X, W_hidden) + b_hidden)
+    y_hat = sigmoid(np.dot(hidden_output, W_output) + b_output)
+
 
     # 誤差
     error = y - y_hat
