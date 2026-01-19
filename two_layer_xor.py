@@ -39,14 +39,14 @@ for epoch in range(10000):
     error = y - y_hat
 
     # 誤差逆伝播
-    d2 = error * sigmoid_deriv(y_hat)
-    d1 = np.dot(d2, W2.T) * sigmoid_deriv(h)
+    d_output = error * sigmoid_deriv(y_hat)
+    d_hidden = np.dot(d_output, W_output.T) * sigmoid_deriv(hidden_output)
 
     # 重み更新
-    W2 += lr * np.dot(h.T, d2)
-    b2 += lr * np.sum(d2, axis=0, keepdims=True)
-    W1 += lr * np.dot(X.T, d1)
-    b1 += lr * np.sum(d1, axis=0, keepdims=True)
+    W_output += lr * np.dot(hidden_output.T, d_output)
+    b_output += lr * np.sum(d_output, axis=0, keepdims=True)    
+    W_hidden += lr * np.dot(X.T, d_hidden)
+    b_hidden += lr * np.sum(d_hidden, axis=0, keepdims=True)
 
 # 結果表示
 print("Predictions:")
