@@ -29,7 +29,7 @@ b_output = np.zeros((1, 1))
 lr = 0.1
 
 # 学習
-for epoch in range(10000):
+for epoch in range(1000):
     # 順伝播
     hidden_output = sigmoid(np.dot(X, W_hidden) + b_hidden)
     y_hat = sigmoid(np.dot(hidden_output, W_output) + b_output)
