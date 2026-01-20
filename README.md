@@ -158,6 +158,7 @@ git clone https://github.com:kamemattari/kadai.git
 cd xor-nn
 python two_layer_xor.py
 
+---
 
 ## 動作環境
 
