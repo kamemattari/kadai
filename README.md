@@ -46,7 +46,25 @@ $$
 \sigma(x) = \frac{1}{1 + e^{-x}}
 $$
 
+実装では、順伝播時に得られた出力値を用いて
+この微分を計算している。
+
 ## 順伝播
+順伝播では、入力から出力までの計算を前向きに行う。
+
+入力行列を $\mathbf{X}$ とすると、
+隠れ層の出力 $\mathbf{h}$ は次式で計算される。
+
+$$
+\mathbf{h} = \sigma(\mathbf{X}\mathbf{W}_{hidden} + \mathbf{b}_{hidden})
+$$
+
+次に、隠れ層の出力を用いて、
+出力層の出力 $\hat{\mathbf{y}}$ を計算する。
+
+$$
+\hat{\mathbf{y}} = \sigma(\mathbf{h}\mathbf{W}_{output} + \mathbf{b}_{output})
+$$
 
 ## 誤差関数
 
