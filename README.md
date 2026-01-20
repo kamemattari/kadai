@@ -179,10 +179,12 @@ $(0,1)$ および $(1,0)$ に対する出力は 1 に近づいている。
 線形分離不可能な XOR 問題を正しく学習できることが確認できた。
 
 ## 参考文献
-- omiita, 「ニューラルネットワークを自作してみる（XOR）」, Qiita  
+- [ニューラルネットワークを自作してみる（XOR） | Qiita](https://qiita.com/omiita/items/1735c1d048fe5f611f80)  
   誤差逆伝播法の数式展開を参考にした。
-- deepage, 「深層学習の基礎（XOR）」  
+
+- [深層学習の基礎（XOR） | deepage](https://deepage.net/deep_learning/2016/10/04/xor_problem.html)  
   XOR問題の設定および図を参考にした。
-- mlnotebook, "Neural Network in Python"  
+
+- [Neural Network in Python | mlnotebook](https://mlnotebook.github.io/post/nn-in-python/)  
   NumPyによる実装構成を参考にした。
 
