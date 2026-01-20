@@ -108,6 +108,14 @@ $$
 \frac{\partial z_{output}}{\partial W_{output}}
 $$
 
+ここで、
+
+$$
+z_{output} = \mathbf{h} W_{output} + b_{output}
+$$
+
+であり、$\hat{y} = \sigma(z_{output})$ である。
+
 ## パラメータ更新
 
 学習率を $\eta$ とすると、
