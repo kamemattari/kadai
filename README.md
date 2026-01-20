@@ -111,12 +111,9 @@ $$
 ここで、
 
 $$
-z_{output} = \mathbf{h} W_{output} + b_{output}
+z_{output} = \mathbf{h} W_{output} + b_{output}, \quad
+\hat{y} = \sigma(z_{output})
 $$
-
-であり、
-
-$$\hat{y} = \sigma(z_{output})$$ 
 
 である。
 
