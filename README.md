@@ -102,6 +102,15 @@ $$
 
 ## パラメータ更新
 
+学習率を $\eta$ とすると、
+各パラメータは以下の式に従って更新される。
+
+$$
+\mathbf{W}_{output}
+\leftarrow
+\mathbf{W}_{output} + \eta \mathbf{h}^T \delta_{output}
+$$
+
 ## 結果
 
 
