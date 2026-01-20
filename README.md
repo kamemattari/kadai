@@ -114,7 +114,11 @@ $$
 z_{output} = \mathbf{h} W_{output} + b_{output}
 $$
 
-であり、$\hat{y} = \sigma(z_{output})$ である。
+であり、
+
+$$\hat{y} = \sigma(z_{output})$$ 
+
+である。
 
 ## パラメータ更新
 
