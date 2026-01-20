@@ -111,6 +111,24 @@ $$
 \mathbf{W}_{output} + \eta \mathbf{h}^T \delta_{output}
 $$
 
+$$
+\mathbf{b}_{output}
+\leftarrow
+\mathbf{b}_{output} + \eta \sum \delta_{output}
+$$
+
+$$
+\mathbf{W}_{hidden}
+\leftarrow
+\mathbf{W}_{hidden} + \eta \mathbf{X}^T \delta_{hidden}
+$$
+
+$$
+\mathbf{b}_{hidden}
+\leftarrow
+\mathbf{b}_{hidden} + \eta \sum \delta_{hidden}
+$$
+
 ## 結果
 
 
