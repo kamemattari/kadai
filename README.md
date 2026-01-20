@@ -160,6 +160,8 @@ python two_layer_xor.py
 
 ```markdown
 
+...
+
 ## 動作環境
 
 本実装は以下の環境で動作確認を行った。
