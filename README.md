@@ -82,36 +82,31 @@ $$
 \hat{\mathbf{y}} = \sigma(\mathbf{h}\mathbf{W}_{output} + \mathbf{b}_{output})
 $$
 
-## 誤差関数
+## 誤差逆伝播法
 
-ネットワークの出力 $\hat{\mathbf{y}}$ と
-正解ラベル $\mathbf{y}$ の差を誤差として定義する。
+誤差逆伝播法では、損失関数 $L$ を各パラメータで偏微分し、
+その勾配を用いて重みを更新する。
+
+計算を簡潔にするため、
+出力と正解の差を補助変数として
 
 $$
 \mathbf{error} = \mathbf{y} - \hat{\mathbf{y}}
 $$
 
-この誤差をもとに、
-誤差逆伝播法によって各パラメータを更新する。
+と定義する。
 
-## 誤差逆伝播
+### 出力層
 
-誤差逆伝播法では、出力層から入力層に向かって
-誤差を伝播させることで、各層の勾配を計算する。
-
-出力層のデルタは以下のように計算される。
+出力層の重み $W_{output}$ に対する勾配は、
+チェインルールを用いて以下のように分解できる。
 
 $$
-\delta_{output}
-= (\mathbf{y} - \hat{\mathbf{y}}) \cdot \sigma'(\hat{\mathbf{y}})
-$$
-
-次に、隠れ層のデルタを計算する。
-
-$$
-\delta_{hidden}
-= (\delta_{output}\mathbf{W}_{output}^T)
-\cdot \sigma'(\mathbf{h})
+\frac{\partial L}{\partial W_{output}}
+=
+\frac{\partial L}{\partial \hat{y}}
+\frac{\partial \hat{y}}{\partial z_{output}}
+\frac{\partial z_{output}}{\partial W_{output}}
 $$
 
 ## パラメータ更新
