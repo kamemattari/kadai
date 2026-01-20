@@ -230,6 +230,9 @@ XOR問題は初期重みによって収束の速さが変わるため、
 - [ニューラルネットワークを自作してみる（XOR） | Qiita](https://qiita.com/omiita/items/1735c1d048fe5f611f80)  
   誤差逆伝播法の数式展開を参考にした。
 
+- [XOR問題とは？ | IT用語集](https://appswingby.com/xor%E5%95%8F%E9%A1%8C-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/)  
+  XOR問題の基本概念と線形分離性について解説。
+
 - [Neural Network in Python | mlnotebook](https://mlnotebook.github.io/post/nn-in-python/)  
   NumPyによる実装構成を参考にした。
 
