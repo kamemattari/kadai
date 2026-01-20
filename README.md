@@ -154,8 +154,8 @@ $$
 本リポジトリは GitHub からクローンして実行できる。
 
 ```bash
-git clone https://github.com:kamemattari/kadai.git
-cd xor-nn
+git clone https://github.com/kamemattari/kadai.git
+cd kadai
 python two_layer_xor.py
 
 ---
