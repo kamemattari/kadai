@@ -103,8 +103,7 @@ $$
 
 $$
 \frac{\partial L}{\partial W_{output}}
-=
-\frac{\partial L}{\partial \hat{y}}
+=\frac{\partial L}{\partial \hat{y}}
 \frac{\partial \hat{y}}{\partial z_{output}}
 \frac{\partial z_{output}}{\partial W_{output}}
 $$
