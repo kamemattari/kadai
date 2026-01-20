@@ -82,6 +82,24 @@ $$
 
 ## 誤差逆伝播
 
+誤差逆伝播法では、出力層から入力層に向かって
+誤差を伝播させることで、各層の勾配を計算する。
+
+出力層のデルタは以下のように計算される。
+
+$$
+\delta_{output}
+= (\mathbf{y} - \hat{\mathbf{y}}) \cdot \sigma'(\hat{\mathbf{y}})
+$$
+
+次に、隠れ層のデルタを計算する。
+
+$$
+\delta_{hidden}
+= (\delta_{output}\mathbf{W}_{output}^T)
+\cdot \sigma'(\mathbf{h})
+$$
+
 ## パラメータ更新
 
 ## 結果
