@@ -151,6 +151,14 @@ $$
 
 ## 実行方法
 
+本リポジトリは GitHub からクローンして実行できる。
+
+```bash
+git clone https://github.com:kamemattari/kadai.git
+cd xor-nn
+python two_layer_xor.py
+
+
 ## 動作環境
 
 本実装は以下の環境で動作確認を行った。
