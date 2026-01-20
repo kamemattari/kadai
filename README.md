@@ -158,7 +158,7 @@ git clone https://github.com/kamemattari/kadai.git
 cd kadai
 python two_layer_xor.py
 
----
+```markdown
 
 ## 動作環境
 
